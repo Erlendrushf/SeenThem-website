@@ -23,7 +23,7 @@ function HomePage() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/SeenThem-website">
       <div className="app">
         <Header />
         <main>
