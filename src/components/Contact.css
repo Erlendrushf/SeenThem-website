@@ -1,0 +1,204 @@
+.contact {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(180deg, var(--darker-background) 0%, var(--dark-background) 100%);
+}
+
+.social-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--spacing-lg);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.social-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.social-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--electric-blue);
+  box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+}
+
+.social-card:hover::before {
+  opacity: 1;
+}
+
+.social-card.twitter:hover {
+  border-color: #1DA1F2;
+  box-shadow: 0 15px 40px rgba(29, 161, 242, 0.2);
+}
+
+.social-card.instagram:hover {
+  border-color: #E4405F;
+  box-shadow: 0 15px 40px rgba(228, 64, 95, 0.2);
+}
+
+.social-card.discord:hover {
+  border-color: #5865F2;
+  box-shadow: 0 15px 40px rgba(88, 101, 242, 0.2);
+}
+
+.social-icon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin-bottom: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-card:hover .social-icon {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-card.twitter .social-icon svg {
+  color: #1DA1F2;
+}
+
+.social-card.instagram .social-icon svg {
+  color: #E4405F;
+}
+
+.social-card.discord .social-icon svg {
+  color: #5865F2;
+}
+
+.social-card h3 {
+  position: relative;
+  z-index: 1;
+  font-size: var(--font-size-xl);
+  color: var(--light-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.social-card p {
+  position: relative;
+  z-index: 1;
+  color: var(--gray-text);
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+.social-description {
+  position: relative;
+  z-index: 1;
+  color: var(--gray-text);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.card-arrow {
+  position: relative;
+  z-index: 1;
+  margin-top: var(--spacing-md);
+  font-size: var(--font-size-xl);
+  color: var(--electric-blue);
+  transition: transform 0.3s ease;
+}
+
+.social-card:hover .card-arrow {
+  transform: translateX(5px);
+}
+
+.social-card.twitter:hover .card-arrow {
+  color: #1DA1F2;
+}
+
+.social-card.instagram:hover .card-arrow {
+  color: #E4405F;
+}
+
+.social-card.discord:hover .card-arrow {
+  color: #5865F2;
+}
+
+.contact-footer {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.footer-text {
+  color: var(--gray-text);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.footer-text strong {
+  color: var(--light-text);
+}
+
+.footer-location {
+  color: var(--gray-text);
+  font-size: var(--font-size-md);
+  margin: 0;
+}
+
+@media (max-width: 968px) {
+  .contact {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .social-cards {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .social-card {
+    padding: var(--spacing-md);
+  }
+
+  .social-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .social-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-text {
+    font-size: var(--font-size-md);
+  }
+}

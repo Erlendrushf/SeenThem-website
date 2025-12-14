@@ -1,0 +1,288 @@
+import './LegalPage.css'
+
+const PrivacyPolicy = () => {
+  return (
+    <section className="legal-page">
+      <div className="container">
+        <div className="legal-header">
+          <h1 className="legal-title">
+            Privacy <span className="gradient-text">Policy</span>
+          </h1>
+          <p className="legal-date">Last Updated: December 14, 2024</p>
+        </div>
+
+        <div className="legal-content">
+          <section className="legal-section">
+            <h2>1. Introduction</h2>
+            <p>
+              Rushfeldt Løsninger ("we", "us", or "our") operates the SeenThem mobile application (the "App"). 
+              This Privacy Policy explains how we collect, use, disclose, and safeguard your personal data when 
+              you use our App.
+            </p>
+            <p>
+              We are committed to protecting your privacy and complying with the General Data Protection Regulation 
+              (GDPR) and other applicable data protection laws.
+            </p>
+            <p><strong>Data Controller:</strong></p>
+            <ul>
+              <li><strong>Business Name:</strong> Rushfeldt Løsninger</li>
+              <li><strong>Organization Number:</strong> [To be added upon ENK approval]</li>
+              <li><strong>Address:</strong> Hovseterveien 84F, 0768 Oslo, Norway</li>
+              <li><strong>Contact Email:</strong> erlendrushf@hotmail.no</li>
+            </ul>
+          </section>
+
+          <section className="legal-section">
+            <h2>2. Legal Basis for Processing</h2>
+            <p>We process your personal data based on the following legal grounds under GDPR Article 6:</p>
+            <ul>
+              <li><strong>Consent (Article 6(1)(a)):</strong> When you provide explicit consent for specific processing activities</li>
+              <li><strong>Contract Performance (Article 6(1)(b)):</strong> To provide you with the App's services</li>
+              <li><strong>Legitimate Interests (Article 6(1)(f)):</strong> To improve our services, prevent fraud, and ensure security</li>
+              <li><strong>Legal Obligation (Article 6(1)(c)):</strong> To comply with applicable laws and regulations</li>
+            </ul>
+          </section>
+
+          <section className="legal-section">
+            <h2>3. Data We Collect</h2>
+            
+            <h3>3.1 Information You Provide Directly</h3>
+            <ul>
+              <li><strong>Account Information:</strong> Email address, username, display name</li>
+              <li><strong>Profile Information:</strong> Profile photo (optional), location (optional)</li>
+              <li><strong>Concert Data:</strong> Concerts attended, concert reviews and ratings, favorite bands</li>
+              <li><strong>Social Data:</strong> Friend connections, mutual friends</li>
+            </ul>
+
+            <h3>3.2 Information Collected Automatically</h3>
+            <ul>
+              <li><strong>Usage Data:</strong> App analytics collected through Apple App Analytics</li>
+              <li><strong>Device Information:</strong> Device type, operating system version (collected by Apple App Analytics)</li>
+            </ul>
+
+            <h3>3.3 Information from Third Parties</h3>
+            <ul>
+              <li><strong>Band and Venue Data:</strong> We use the Ticketmaster Discovery API to provide information about bands and venues</li>
+            </ul>
+          </section>
+
+          <section className="legal-section">
+            <h2>4. How We Use Your Data</h2>
+            <p>We use your personal data for the following purposes:</p>
+            <ul>
+              <li><strong>Service Provision:</strong> To create and manage your account, display your concert history, and enable social features</li>
+              <li><strong>Authentication:</strong> To verify your identity using email-based one-time password (OTP) authentication via Microsoft Azure CIAM</li>
+              <li><strong>Social Features:</strong> To connect you with friends, show concert statistics, and display shared concert experiences</li>
+              <li><strong>Analytics:</strong> To understand how users interact with the App and improve our services</li>
+              <li><strong>Advertising:</strong> To display relevant advertisements through Google Ads</li>
+              <li><strong>Premium Features:</strong> To provide access to premium features for users who make purchases</li>
+              <li><strong>Communications:</strong> To send you important updates about the App, respond to your inquiries, and provide customer support</li>
+              <li><strong>Legal Compliance:</strong> To comply with applicable laws and regulations</li>
+            </ul>
+          </section>
+
+          <section className="legal-section">
+            <h2>5. Data Sharing and Disclosure</h2>
+            
+            <h3>5.1 Public Information</h3>
+            <p>The following information is visible to all App users if you choose to make it public:</p>
+            <ul>
+              <li>Username</li>
+              <li>Display name</li>
+              <li>Profile picture</li>
+              <li>Total concert count (if you allow this setting)</li>
+              <li>Join date</li>
+            </ul>
+
+            <h3>5.2 Friends-Only Information (Default)</h3>
+            <p>The following information is visible only to your friends by default:</p>
+            <ul>
+              <li>Recent concert activity</li>
+              <li>Concert reviews and ratings</li>
+              <li>Favorite bands</li>
+              <li>Detailed statistics</li>
+              <li>Mutual friends</li>
+              <li>Location</li>
+              <li>Shared concerts (concerts both users have attended)</li>
+            </ul>
+
+            <h3>5.3 Third-Party Service Providers</h3>
+            <p>We share data with the following third-party services:</p>
+            <ul>
+              <li><strong>Microsoft Azure CIAM:</strong> For user authentication services</li>
+              <li><strong>Ticketmaster Discovery API:</strong> To retrieve band and venue information</li>
+              <li><strong>Apple App Analytics:</strong> For usage analytics (anonymized data)</li>
+              <li><strong>Google Ads:</strong> For displaying advertisements</li>
+              <li><strong>Apple StoreKit:</strong> For processing premium feature purchases</li>
+            </ul>
+
+            <h3>5.4 Legal Requirements</h3>
+            <p>
+              We may disclose your data if required by law, court order, or governmental authority, or to 
+              protect our rights, property, or safety.
+            </p>
+          </section>
+
+          <section className="legal-section">
+            <h2>6. Data Storage and Security</h2>
+            
+            <h3>6.1 Data Location</h3>
+            <p>
+              All user data is stored on servers located in Sweden (within the EU/EEA). We do not transfer 
+              your personal data outside the European Economic Area.
+            </p>
+
+            <h3>6.2 Security Measures</h3>
+            <p>We implement appropriate technical and organizational measures to protect your personal data, including:</p>
+            <ul>
+              <li>Encrypted data transmission (HTTPS/TLS)</li>
+              <li>Secure database storage with PostgreSQL</li>
+              <li>Email-based OTP authentication</li>
+              <li>Regular security assessments</li>
+            </ul>
+            <p>Despite our efforts, no method of transmission or storage is 100% secure. We cannot guarantee absolute security.</p>
+          </section>
+
+          <section className="legal-section">
+            <h2>7. Data Retention</h2>
+            
+            <h3>7.1 Active Accounts</h3>
+            <p>We retain your personal data for as long as your account is active or as needed to provide you with services.</p>
+
+            <h3>7.2 Account Deletion</h3>
+            <p>When you request account deletion:</p>
+            <ul>
+              <li>Your account is marked for deletion and hidden from other users immediately</li>
+              <li>Your data is retained for 90 days to allow for account recovery</li>
+              <li>After 90 days, all your personal data and concert data are permanently deleted</li>
+              <li>Some data may be retained longer if required by law</li>
+            </ul>
+
+            <h3>7.3 Legal Requirements</h3>
+            <p>We may retain certain data for longer periods if required by applicable laws or to resolve disputes.</p>
+          </section>
+
+          <section className="legal-section">
+            <h2>8. Your Rights Under GDPR</h2>
+            <p>As a data subject under GDPR, you have the following rights:</p>
+            
+            <h3>8.1 Right to Access (Article 15)</h3>
+            <p>You can request a copy of the personal data we hold about you.</p>
+
+            <h3>8.2 Right to Rectification (Article 16)</h3>
+            <p>You can request correction of inaccurate or incomplete personal data.</p>
+
+            <h3>8.3 Right to Erasure (Article 17)</h3>
+            <p>You can request deletion of your personal data ("right to be forgotten").</p>
+
+            <h3>8.4 Right to Restriction of Processing (Article 18)</h3>
+            <p>You can request that we limit how we use your personal data.</p>
+
+            <h3>8.5 Right to Data Portability (Article 20)</h3>
+            <p>You can request your data in a structured, commonly used, machine-readable format.</p>
+
+            <h3>8.6 Right to Object (Article 21)</h3>
+            <p>You can object to processing based on legitimate interests or for direct marketing.</p>
+
+            <h3>8.7 Right to Withdraw Consent (Article 7(3))</h3>
+            <p>Where processing is based on consent, you can withdraw consent at any time.</p>
+
+            <h3>8.8 Right to Lodge a Complaint</h3>
+            <p>You have the right to lodge a complaint with the Norwegian Data Protection Authority (Datatilsynet):</p>
+            <ul>
+              <li><strong>Website:</strong> <a href="https://www.datatilsynet.no" target="_blank" rel="noopener noreferrer">www.datatilsynet.no</a></li>
+              <li><strong>Email:</strong> postkasse@datatilsynet.no</li>
+              <li><strong>Phone:</strong> +47 22 39 69 00</li>
+            </ul>
+
+            <h3>8.9 Exercising Your Rights</h3>
+            <p>
+              To exercise any of these rights, please contact us at <a href="mailto:erlendrushf@hotmail.no">erlendrushf@hotmail.no</a>. 
+              We will respond to your request within 30 days.
+            </p>
+          </section>
+
+          <section className="legal-section">
+            <h2>9. Children's Privacy</h2>
+            <p>
+              SeenThem is not intended for children under the age of 13. We do not knowingly collect personal 
+              data from children under 13. If you are a parent or guardian and believe your child has provided 
+              us with personal data, please contact us immediately.
+            </p>
+          </section>
+
+          <section className="legal-section">
+            <h2>10. Cookies and Tracking Technologies</h2>
+            
+            <h3>10.1 Apple App Analytics</h3>
+            <p>
+              We use Apple App Analytics to collect anonymized usage data. This is a first-party analytics 
+              service provided by Apple.
+            </p>
+
+            <h3>10.2 Google Ads</h3>
+            <p>
+              We use Google Ads to display advertisements. Google may use cookies and similar technologies to 
+              provide relevant ads. You can learn more about Google's privacy practices at: 
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"> https://policies.google.com/privacy</a>
+            </p>
+          </section>
+
+          <section className="legal-section">
+            <h2>11. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
+            <ul>
+              <li>Posting the new Privacy Policy in the App</li>
+              <li>Updating the "Last Updated" date at the top of this policy</li>
+              <li>Sending you an email notification (for significant changes)</li>
+            </ul>
+            <p>
+              Your continued use of the App after changes become effective constitutes acceptance of the revised 
+              Privacy Policy.
+            </p>
+          </section>
+
+          <section className="legal-section">
+            <h2>12. International Users</h2>
+            <p>
+              While SeenThem primarily serves users in the European Economic Area, if you access the App from 
+              outside the EEA, please note that your data will be transferred to and processed in Sweden (EU).
+            </p>
+          </section>
+
+          <section className="legal-section">
+            <h2>13. Contact Us</h2>
+            <p>
+              If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, 
+              please contact us:
+            </p>
+            <p><strong>Rushfeldt Løsninger</strong></p>
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:erlendrushf@hotmail.no">erlendrushf@hotmail.no</a></li>
+              <li><strong>Address:</strong> Hovseterveien 84F, 0768 Oslo, Norway</li>
+            </ul>
+          </section>
+
+          <section className="legal-section">
+            <h2>14. Data Protection Officer</h2>
+            <p>
+              As we are a small business, we are not required to appoint a Data Protection Officer under GDPR. 
+              For all privacy-related inquiries, please contact us at the email address above.
+            </p>
+          </section>
+
+          <section className="legal-section">
+            <h2>Norwegian Summary (Norsk sammendrag)</h2>
+            <p>
+              Vi samler inn og behandler dine personopplysninger i samsvar med GDPR. Du har rett til å få 
+              tilgang til, rette, slette og overføre dine data. Kontakt oss på erlendrushf@hotmail.no for 
+              spørsmål om personvern eller for å utøve dine rettigheter.
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default PrivacyPolicy
