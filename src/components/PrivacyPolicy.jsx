@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
             <p><strong>Data Controller:</strong></p>
             <ul>
               <li><strong>Business Name:</strong> Rushfeldt Løsninger</li>
-              <li><strong>Organization Number:</strong> [To be added upon ENK approval]</li>
+              <li><strong>Organization Number:</strong> 836771532</li>
               <li><strong>Address:</strong> Hovseterveien 84F, 0768 Oslo, Norway</li>
               <li><strong>Contact Email:</strong> erlendrushf@hotmail.no</li>
             </ul>
