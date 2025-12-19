@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
               <li><strong>Business Name:</strong> Rushfeldt Løsninger</li>
               <li><strong>Organization Number:</strong> 836771532</li>
               <li><strong>Address:</strong> Hovseterveien 84F, 0768 Oslo, Norway</li>
-              <li><strong>Contact Email:</strong> erlendrushf@hotmail.no</li>
+              <li><strong>Contact Email:</strong> support@seenthem.app</li>
             </ul>
           </section>
 
@@ -197,7 +197,7 @@ const PrivacyPolicy = () => {
 
             <h3>8.9 Exercising Your Rights</h3>
             <p>
-              To exercise any of these rights, please contact us at <a href="mailto:erlendrushf@hotmail.no">erlendrushf@hotmail.no</a>. 
+              To exercise any of these rights, please contact us at <a href="mailto:support@seenthem.app">support@seenthem.app</a>. 
               We will respond to your request within 30 days.
             </p>
           </section>
@@ -258,7 +258,7 @@ const PrivacyPolicy = () => {
             </p>
             <p><strong>Rushfeldt Løsninger</strong></p>
             <ul>
-              <li><strong>Email:</strong> <a href="mailto:erlendrushf@hotmail.no">erlendrushf@hotmail.no</a></li>
+              <li><strong>Email:</strong> <a href="mailto:support@seenthem.app">support@seenthem.app</a></li>
               <li><strong>Address:</strong> Hovseterveien 84F, 0768 Oslo, Norway</li>
             </ul>
           </section>
@@ -275,7 +275,7 @@ const PrivacyPolicy = () => {
             <h2>Norwegian Summary (Norsk sammendrag)</h2>
             <p>
               Vi samler inn og behandler dine personopplysninger i samsvar med GDPR. Du har rett til å få 
-              tilgang til, rette, slette og overføre dine data. Kontakt oss på erlendrushf@hotmail.no for 
+              tilgang til, rette, slette og overføre dine data. Kontakt oss på support@seenthem.app for 
               spørsmål om personvern eller for å utøve dine rettigheter.
             </p>
           </section>

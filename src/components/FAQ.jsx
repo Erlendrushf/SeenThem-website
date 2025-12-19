@@ -63,7 +63,7 @@ const FAQ = () => {
     },
     {
       question: "What are my rights under GDPR?",
-      answer: "Under GDPR, you have the right to access your data, correct inaccurate information, request deletion (right to be forgotten), restrict processing, data portability, object to processing, and withdraw consent anytime. Contact us at erlendrushf@hotmail.no to exercise these rights, and we'll respond within 30 days. You can also lodge a complaint with the Norwegian Data Protection Authority (Datatilsynet)."
+      answer: "Under GDPR, you have the right to access your data, correct inaccurate information, request deletion (right to be forgotten), restrict processing, data portability, object to processing, and withdraw consent anytime. Contact us at support@seenthem.app to exercise these rights, and we'll respond within 30 days. You can also lodge a complaint with the Norwegian Data Protection Authority (Datatilsynet)."
     },
     {
       question: "Can I export my concert data?",

@@ -27,7 +27,7 @@ const TermsOfService = () => {
               <li><strong>Business Name:</strong> Rushfeldt Løsninger</li>
               <li><strong>Organization Number:</strong> 836771532</li>
               <li><strong>Address:</strong> Hovseterveien 84F, 0768 Oslo, Norway</li>
-              <li><strong>Contact Email:</strong> erlendrushf@hotmail.no</li>
+              <li><strong>Contact Email:</strong> support@seenthem.app</li>
               <li><strong>Jurisdiction:</strong> Norway</li>
             </ul>
           </section>
@@ -324,7 +324,7 @@ const TermsOfService = () => {
             <p>You may terminate your account at any time by:</p>
             <ul>
               <li>Deleting your account through the App settings</li>
-              <li>Contacting us at <a href="mailto:erlendrushf@hotmail.no">erlendrushf@hotmail.no</a></li>
+              <li>Contacting us at <a href="mailto:support@seenthem.app">support@seenthem.app</a></li>
             </ul>
 
             <h3>12.2 Termination by Us</h3>
@@ -386,7 +386,7 @@ const TermsOfService = () => {
 
             <h3>14.4 Dispute Resolution</h3>
             <p>
-              Before initiating legal proceedings, we encourage you to contact us at <a href="mailto:erlendrushf@hotmail.no">erlendrushf@hotmail.no</a> to 
+              Before initiating legal proceedings, we encourage you to contact us at <a href="mailto:support@seenthem.app">support@seenthem.app</a> to 
               resolve any disputes informally.
             </p>
           </section>
@@ -434,7 +434,7 @@ const TermsOfService = () => {
             <p>For questions, concerns, or notices regarding these Terms, please contact us:</p>
             <p><strong>Rushfeldt Løsninger</strong></p>
             <ul>
-              <li><strong>Email:</strong> <a href="mailto:erlendrushf@hotmail.no">erlendrushf@hotmail.no</a></li>
+              <li><strong>Email:</strong> <a href="mailto:support@seenthem.app">support@seenthem.app</a></li>
               <li><strong>Address:</strong> Hovseterveien 84F, 0768 Oslo, Norway</li>
             </ul>
           </section>
@@ -451,7 +451,7 @@ const TermsOfService = () => {
             <p>
               Ved å bruke SeenThem godtar du disse vilkårene for bruk. Du må være minst 13 år gammel. Premium-funksjoner er et 
               engangskjøp med 48 timers refusjonsperiode. Vi kan avslutte din konto ved brudd på vilkårene. Norsk lov gjelder for 
-              disse vilkårene. Kontakt oss på erlendrushf@hotmail.no ved spørsmål.
+              disse vilkårene. Kontakt oss på support@seenthem.app ved spørsmål.
             </p>
           </section>
         </div>
