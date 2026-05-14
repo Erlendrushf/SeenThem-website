@@ -1,8 +1,23 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import './Footer.css'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const scrollToSection = (sectionId) => {
+    if (location.pathname !== '/') {
+      navigate('/')
+      setTimeout(() => {
+        const element = document.getElementById(sectionId)
+        if (element) element.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+      return
+    }
+    const element = document.getElementById(sectionId)
+    if (element) element.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <footer className="footer">
@@ -18,10 +33,10 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Quick Links</h4>
             <ul className="footer-links">
-              <li><a href="/#home">Home</a></li>
-              <li><a href="/#features">Features</a></li>
-              <li><a href="/#about">About</a></li>
-              <li><a href="/#contact">Contact</a></li>
+              <li><a onClick={() => scrollToSection('home')} style={{ cursor: 'pointer' }}>Home</a></li>
+              <li><a onClick={() => scrollToSection('features')} style={{ cursor: 'pointer' }}>Features</a></li>
+              <li><a onClick={() => scrollToSection('about')} style={{ cursor: 'pointer' }}>About</a></li>
+              <li><a onClick={() => scrollToSection('contact')} style={{ cursor: 'pointer' }}>Contact</a></li>
             </ul>
           </div>
 

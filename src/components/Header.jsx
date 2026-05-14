@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react'
+import { useNavigate, useLocation, Link } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,10 +18,24 @@ const Header = () => {
   }, [])
 
   const scrollToSection = (sectionId) => {
+    setIsMobileMenuOpen(false)
+
+    // If not on the home page, navigate home then scroll
+    if (location.pathname !== '/') {
+      navigate('/')
+      // Wait for navigation to complete before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 100)
+      return
+    }
+
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
-      setIsMobileMenuOpen(false)
     }
   }
 
@@ -26,9 +43,9 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <nav className="nav">
-          <div className="logo">
+          <Link to="/" className="logo" style={{ textDecoration: 'none' }}>
             <span className="gradient-text">SeenThem</span>
-          </div>
+          </Link>
 
           <button
             className="mobile-menu-toggle"
