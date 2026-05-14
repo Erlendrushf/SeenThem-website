@@ -19,6 +19,10 @@ export default defineConfig({
             resolve(__dirname, 'terms.html'),
             resolve(__dirname, 'dist/terms.html')
           )
+          copyFileSync(
+            resolve(__dirname, 'staticwebapp.config.json'),
+            resolve(__dirname, 'dist/staticwebapp.config.json')
+          )
           console.log('✅ Copied legal pages to dist/')
         } catch (err) {
           console.error('Error copying legal pages:', err)
@@ -26,5 +30,5 @@ export default defineConfig({
       }
     }
   ],
-  base: '/SeenThem-website/',
+  base: '/',
 })
