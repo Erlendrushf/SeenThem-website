@@ -65,7 +65,7 @@
   border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  box-shadow: 0 2px 10px rgba(255, 176, 46, 0.3);
+  box-shadow: var(--glow-active-card);
 }
 
 .feature-card::before {

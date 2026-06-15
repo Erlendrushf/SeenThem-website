@@ -18,7 +18,7 @@
   flex: 1;
   padding: var(--spacing-sm) var(--spacing-md);
   font-size: var(--font-size-md);
-  background: rgba(36, 28, 25, 0.6);
+  background: var(--surface-glass-warm);
   border: 1px solid var(--st-border);
   border-radius: var(--radius-md);
   color: var(--light-text);
@@ -28,8 +28,8 @@
 
 .notify-input:focus {
   border-color: var(--st-amber);
-  background: rgba(36, 28, 25, 0.8);
-  box-shadow: 0 0 0 3px rgba(255, 176, 46, 0.15);
+  background: var(--surface-glass-warm-dense);
+  box-shadow: var(--focus-ring-amber);
 }
 
 .notify-input:disabled {

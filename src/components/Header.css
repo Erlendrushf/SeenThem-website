@@ -4,14 +4,14 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(24, 19, 17, 0.8);
+  background: var(--surface-header-glass);
   backdrop-filter: blur(10px);
   transition: all var(--duration-normal) var(--ease-default);
   padding: 1rem 0;
 }
 
 .header.scrolled {
-  background: rgba(24, 19, 17, 0.95);
+  background: var(--surface-header-solid);
   box-shadow: var(--elevation-1);
 }
 
@@ -87,7 +87,7 @@
     padding: 2rem;
     gap: 1.5rem;
     transition: right var(--duration-normal) var(--ease-default);
-    box-shadow: -4px 0 20px rgba(6, 5, 4, 0.7);
+    box-shadow: -4px 0 20px var(--shadow-overlay);
   }
 
   .nav-links.active {
