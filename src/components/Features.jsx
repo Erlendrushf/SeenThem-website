@@ -45,7 +45,7 @@ const Features = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Powerful <span className="gradient-text">Features</span>
+            Powerful <span className="accent-text">Features</span>
           </h2>
           <p className="section-subtitle">
             Everything you need to enhance your concert-going experience
@@ -54,7 +54,11 @@ const Features = () => {
 
         <div className="features-grid">
           {features.map((feature, index) => (
-            <div key={index} className={`feature-card ${feature.comingSoon ? 'coming-soon' : ''}`}>
+            <div
+              key={index}
+              className={`feature-card ${feature.comingSoon ? 'coming-soon' : ''}`}
+              style={{ animationDelay: `${index * 60}ms` }}
+            >
               <div className="feature-icon">{feature.icon}</div>
               <h3 className="feature-title">{feature.title}</h3>
               <p className="feature-description">{feature.description}</p>

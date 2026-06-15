@@ -1,6 +1,6 @@
 .contact {
   padding: var(--spacing-xl) 0;
-  background: linear-gradient(180deg, var(--darker-background) 0%, var(--dark-background) 100%);
+  background: linear-gradient(180deg, var(--st-surface-deepest) 0%, var(--st-surface-base) 100%);
 }
 
 .social-cards {
@@ -20,12 +20,12 @@
   align-items: center;
   text-align: center;
   padding: var(--spacing-lg);
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--st-surface-card);
+  border: 1px solid var(--st-border);
   border-radius: var(--radius-lg);
   text-decoration: none;
   color: inherit;
-  transition: all 0.3s ease;
+  transition: all var(--duration-normal) var(--ease-default);
   overflow: hidden;
 }
 
@@ -36,15 +36,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.05) 100%);
+  background: linear-gradient(135deg, transparent 0%, rgba(255, 176, 46, 0.04) 100%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity var(--duration-normal) var(--ease-default);
 }
 
 .social-card:hover {
   transform: translateY(-8px);
-  border-color: var(--electric-blue);
-  box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+  border-color: var(--st-amber);
+  box-shadow: var(--glow-active-card);
 }
 
 .social-card:hover::before {
@@ -75,14 +75,14 @@
   width: 80px;
   height: 80px;
   margin-bottom: var(--spacing-md);
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--st-surface-raised);
   border-radius: 50%;
-  transition: all 0.3s ease;
+  transition: all var(--duration-normal) var(--ease-default);
 }
 
 .social-card:hover .social-icon {
   transform: scale(1.1);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 176, 46, 0.1);
 }
 
 .social-card.twitter .social-icon svg {
@@ -128,8 +128,8 @@
   z-index: 1;
   margin-top: var(--spacing-md);
   font-size: var(--font-size-xl);
-  color: var(--electric-blue);
-  transition: transform 0.3s ease;
+  color: var(--st-amber);
+  transition: transform var(--duration-fast) var(--ease-default);
 }
 
 .social-card:hover .card-arrow {
@@ -151,7 +151,7 @@
 .contact-footer {
   margin-top: var(--spacing-xl);
   padding-top: var(--spacing-lg);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--st-border);
   text-align: center;
 }
 

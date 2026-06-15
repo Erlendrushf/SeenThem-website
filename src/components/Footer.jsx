@@ -74,7 +74,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>&copy; {currentYear} SeenThem. All rights reserved.</p>
-          <p>Made with ❤️ for music fans</p>
+          <p>Made with <span className="footer-heart">❤️</span> for music fans</p>
         </div>
       </div>
     </footer>

@@ -12,7 +12,7 @@ const Contact = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Join the <span className="gradient-text">Community</span>
+            Join the <span className="accent-text">Community</span>
           </h2>
           <p className="section-subtitle">
             Connect with us on social media. Follow for updates, share your concert stories, 

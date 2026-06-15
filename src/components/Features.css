@@ -1,6 +1,6 @@
 .features {
   padding: var(--spacing-xl) 0;
-  background: linear-gradient(180deg, var(--dark-background) 0%, var(--darker-background) 100%);
+  background: linear-gradient(180deg, var(--st-surface-base) 0%, var(--st-surface-deepest) 100%);
 }
 
 .section-header {
@@ -28,21 +28,21 @@
 }
 
 .feature-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--st-surface-card);
+  border: 1px solid var(--st-border);
   border-radius: var(--radius-lg);
   padding: var(--spacing-lg);
-  transition: all 0.3s ease;
+  transition: all var(--duration-normal) var(--ease-default);
   position: relative;
   overflow: hidden;
 }
 
 .feature-card.coming-soon {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--st-surface-card);
+  border: 1px solid var(--st-border);
   border-radius: var(--radius-lg);
   padding: var(--spacing-lg);
-  transition: all 0.3s ease;
+  transition: all var(--duration-normal) var(--ease-default);
   position: relative;
   overflow: hidden;
 }
@@ -50,22 +50,22 @@
 .feature-card.coming-soon:hover {
   opacity: 0.85;
   transform: translateY(-5px);
-  border-color: var(--electric-blue);
+  border-color: var(--st-amber);
   border-style: solid;
 }
 
 .coming-soon-badge {
   margin-top: var(--spacing-md);
   display: inline-block;
-  background: linear-gradient(135deg, var(--deep-purple) 0%, var(--electric-blue) 100%);
-  color: var(--light-text);
+  background: var(--st-amber);
+  color: var(--st-text-inverse);
   font-size: var(--font-size-sm);
   font-weight: 600;
   padding: 0.375rem 0.75rem;
   border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  box-shadow: 0 2px 10px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 2px 10px rgba(255, 176, 46, 0.3);
 }
 
 .feature-card::before {
@@ -75,24 +75,40 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, var(--deep-purple) 0%, var(--electric-blue) 100%);
+  background: linear-gradient(135deg, rgba(255, 176, 46, 0.08) 0%, rgba(245, 56, 78, 0.04) 100%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity var(--duration-normal) var(--ease-default);
   z-index: 0;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
-  border-color: var(--electric-blue);
+  border-color: var(--st-amber);
+  box-shadow: var(--glow-active-card);
 }
 
 .feature-card:hover::before {
-  opacity: 0.1;
+  opacity: 1;
 }
 
 .feature-card > * {
   position: relative;
   z-index: 1;
+}
+
+.feature-card {
+  animation: featureCardIn var(--duration-normal) var(--ease-default) both;
+}
+
+@keyframes featureCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .feature-icon {

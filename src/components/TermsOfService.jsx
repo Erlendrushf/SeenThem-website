@@ -6,7 +6,7 @@ const TermsOfService = () => {
       <div className="container">
         <div className="legal-header">
           <h1 className="legal-title">
-            Terms of <span className="gradient-text">Service</span>
+            Terms of <span className="accent-text">Service</span>
           </h1>
           <p className="legal-date">Last Updated: December 14, 2024</p>
         </div>

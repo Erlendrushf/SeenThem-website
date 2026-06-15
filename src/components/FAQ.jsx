@@ -100,7 +100,7 @@ const FAQ = () => {
       <div className="container">
         <div className="faq-header">
           <h1 className="faq-title">
-            Frequently Asked <span className="gradient-text">Questions</span>
+            Frequently Asked <span className="accent-text">Questions</span>
           </h1>
           <p className="faq-subtitle">
             Find answers to common questions about SeenThem. Can't find what you're looking for? 

@@ -1,6 +1,6 @@
 .about {
   padding: var(--spacing-xl) 0;
-  background: var(--dark-background);
+  background: var(--st-surface-base);
 }
 
 /* Hero Story Section */
@@ -12,7 +12,7 @@
 
 .about-tagline {
   font-size: var(--font-size-xl);
-  color: var(--electric-blue);
+  color: var(--st-amber);
   font-style: italic;
   margin: var(--spacing-md) 0;
   font-weight: 500;
@@ -36,17 +36,17 @@
 .mission-card,
 .vision-card {
   padding: var(--spacing-lg);
-  background: linear-gradient(135deg, rgba(107, 44, 145, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+  background: var(--st-surface-card);
   border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
+  border: 1px solid var(--st-border);
+  transition: all var(--duration-normal) var(--ease-default);
 }
 
 .mission-card:hover,
 .vision-card:hover {
   transform: translateY(-5px);
-  border-color: var(--electric-blue);
-  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+  border-color: var(--st-amber);
+  box-shadow: var(--glow-active-card);
 }
 
 .card-icon {
@@ -74,8 +74,8 @@
 .values-section {
   margin: var(--spacing-xl) 0;
   padding: var(--spacing-xl) 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--st-border);
+  border-bottom: 1px solid var(--st-border);
 }
 
 .values-title {
@@ -93,15 +93,15 @@
 
 .value-card {
   padding: var(--spacing-lg);
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--st-surface-card);
   border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: all 0.3s ease;
+  border: 1px solid var(--st-border);
+  transition: all var(--duration-normal) var(--ease-default);
 }
 
 .value-card:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: var(--electric-blue);
+  background: var(--st-surface-raised);
+  border-color: var(--st-amber);
   transform: translateY(-3px);
 }
 
@@ -128,9 +128,9 @@
 .story-section {
   margin: var(--spacing-xl) 0;
   padding: var(--spacing-xl);
-  background: linear-gradient(135deg, rgba(107, 44, 145, 0.08) 0%, rgba(0, 212, 255, 0.08) 100%);
+  background: var(--st-surface-card);
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--st-border);
   text-align: center;
   max-width: 900px;
   margin-left: auto;
@@ -141,7 +141,7 @@
   font-size: var(--font-size-2xl);
   color: var(--light-text);
   margin-bottom: var(--spacing-md);
-  background: linear-gradient(135deg, var(--neon-pink) 0%, var(--electric-blue) 100%);
+  background: linear-gradient(135deg, var(--st-crimson) 0%, var(--st-amber) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -155,7 +155,7 @@
 }
 
 .story-intro strong {
-  color: var(--electric-blue);
+  color: var(--st-amber);
   font-weight: 600;
 }
 
@@ -191,16 +191,16 @@
 }
 
 .why-text strong {
-  color: var(--electric-blue);
+  color: var(--st-amber);
   font-weight: 600;
 }
 
 .conversation-box {
   margin: var(--spacing-lg) 0;
   padding: var(--spacing-lg);
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--st-surface-deepest);
   border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--st-border);
   text-align: left;
 }
 
@@ -211,7 +211,7 @@
 }
 
 .conversation-line.you {
-  color: var(--electric-blue);
+  color: var(--st-amber);
 }
 
 .conversation-line.uncertain {
@@ -246,16 +246,16 @@
 
 .different-card {
   padding: var(--spacing-lg);
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--st-surface-card);
   border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--st-border);
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all var(--duration-normal) var(--ease-default);
 }
 
 .different-card:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: var(--neon-pink);
+  background: var(--st-surface-raised);
+  border-color: var(--st-crimson);
   transform: translateY(-5px);
 }
 
@@ -281,9 +281,9 @@
 .about-cta {
   margin: var(--spacing-xl) 0 0;
   padding: var(--spacing-xl);
-  background: linear-gradient(135deg, rgba(107, 44, 145, 0.15) 0%, rgba(0, 212, 255, 0.15) 100%);
+  background: var(--st-surface-hero-wash);
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--st-border);
   text-align: center;
 }
 
@@ -310,7 +310,7 @@
 }
 
 .cta-motto strong {
-  background: linear-gradient(135deg, var(--neon-pink) 0%, var(--electric-blue) 100%);
+  background: linear-gradient(135deg, var(--st-crimson) 0%, var(--st-amber) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

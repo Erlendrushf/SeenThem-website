@@ -1,19 +1,69 @@
 :root {
-  /* Color Scheme */
+  /* Brand Identity (logo only) */
   --deep-purple: #6B2C91;
   --electric-blue: #00D4FF;
-  --dark-background: #1A1A1A;
-  --darker-background: #0F0F0F;
+
+  /* Surface Ramp — warm near-black (red-shifted) */
+  --st-surface-deepest: #060504;   /* Under fixed nav, footer */
+  --st-surface-base: #0B0809;      /* Page background */
+  --st-surface-card: #140A0C;      /* Cards (default) */
+  --st-surface-header: #181311;    /* Header / sticky top-bar tint */
+  --st-surface-raised: #241C19;    /* Pills, sheets, hover cards */
+  --st-surface-hero-wash: #2A1619; /* Brand-tinted wash for hero blocks */
+
+  /* Legacy aliases (consumed by existing code) */
+  --dark-background: var(--st-surface-base);
+  --darker-background: var(--st-surface-deepest);
+
+  /* Interactive Primary — amber */
+  --st-amber: #FFB02E;
+  --st-amber-bright: #FFC15A;
+  --st-text-inverse: #1A1212;
+
+  /* Brand-identity accent — crimson */
+  --st-crimson: #F5384E;
+
+  /* Stat-color system */
+  --st-stat-concerts: #FFB02E;   /* amber */
+  --st-stat-bands: #F5384E;      /* crimson */
+  --st-stat-venues: #B57BFF;     /* light purple */
+  --st-stat-festivals: #2DD4A7;  /* teal */
+  --st-stat-countries: #FF5C8A;  /* pink */
+  --st-stat-years: #FFB02E;     /* amber */
+
+  /* Text — warm grays */
   --light-text: #FFFFFF;
-  --gray-text: #B0B0B0;
-  
+  --gray-text: #B0A6A3;
+  --st-text-muted: #8A807D;
+
+  /* Borders */
+  --st-border: #2E2421;
+  --st-border-soft: rgba(255, 255, 255, 0.08);
+
+  /* Elevation Glows */
+  --glow-amber: 0 10px 30px rgba(255, 176, 46, 0.35);
+  --glow-fab: 0 8px 24px rgba(255, 176, 46, 0.4);
+  --glow-active-card: 0 4px 16px rgba(255, 176, 46, 0.15);
+  --elevation-1: 0 4px 12px rgba(245, 56, 78, 0.08);
+  --elevation-2: 0 8px 24px rgba(245, 56, 78, 0.12);
+  --glow-purple: 0 10px 30px rgba(107, 44, 145, 0.4);
+  --glow-blue: 0 10px 30px rgba(0, 212, 255, 0.3);
+
+  /* Motion */
+  --duration-instant: 100ms;
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --stagger-normal: 60ms;
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
   --spacing-xl: 6rem;
-  
+
   /* Typography */
   --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
   --font-size-base: 16px;
@@ -21,7 +71,7 @@
   --font-size-xl: 1.5rem;
   --font-size-2xl: 2rem;
   --font-size-3xl: 3rem;
-  
+
   /* Border Radius */
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -63,6 +113,10 @@ body {
   background-clip: text;
 }
 
+.accent-text {
+  color: var(--st-amber);
+}
+
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -70,31 +124,33 @@ body {
   font-weight: 600;
   text-decoration: none;
   border-radius: var(--radius-md);
-  transition: all 0.3s ease;
+  transition: all var(--duration-fast) var(--ease-default);
   cursor: pointer;
   border: none;
   font-family: inherit;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--deep-purple) 0%, var(--electric-blue) 100%);
-  color: var(--light-text);
+  background: var(--st-amber);
+  color: var(--st-text-inverse);
 }
 
 .btn-primary:hover {
+  background: var(--st-amber-bright);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(107, 44, 145, 0.4);
+  box-shadow: var(--glow-fab);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--electric-blue);
-  border: 2px solid var(--electric-blue);
+  color: var(--st-amber);
+  border: 2px solid var(--st-amber);
 }
 
 .btn-secondary:hover {
-  background: var(--electric-blue);
-  color: var(--dark-background);
+  background: var(--st-amber);
+  color: var(--st-text-inverse);
+  box-shadow: var(--glow-amber);
 }
 
 /* Scrollbar Styling */
@@ -103,14 +159,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--darker-background);
+  background: var(--st-surface-deepest);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--deep-purple);
+  background: var(--st-border);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--electric-blue);
+  background: var(--st-amber);
 }
